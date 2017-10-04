@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
-*,ul {
+*,
+ul {
     padding: 0;
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 li {
@@ -10,4 +12,101 @@ li {
 
 a {
     text-decoration: none;
+}
+
+body {
+    background-image: url(../img/fondo.png);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.u--login {
+    width: 23em;
+}
+
+.formulario {
+    background: white;
+    padding: 1em;
+    border-radius: 0.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 3px 3px 0 rgba(3, 2, 2, 0.64);
+}
+
+.linea {
+    height: 1px;
+    background: #911720;
+    width: 10em;
+    margin: 0.8em 0 0 0;
+}
+
+.formulario--title {
+    font-size: 1.6em;
+    margin: 0 0 0.3em 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formulario--campos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    li {
+        margin: 1.5em 0 0 0;
+        div {
+            padding: 0 0 0.5em 0;
+        }
+        .nombre{
+            font-size: 0.9em;
+        }
+    }
+    input {
+        background: #F0F0F1;
+        height: 2em;
+        font-size: 0.9em;
+        padding: 0.2em 0.5em 0.2em 0.5em;
+        width: 22em;
+        border-radius: 0.6em;
+        border: none;
+    }
+}
+
+.formulario--boton {
+    margin: 2em 0;
+    a {
+        padding: 0.5em 3em;
+        border-radius: 0.4em;
+        color: white;
+        background: #911720;
+        box-shadow: 0 3px 3px 0 rgba(3, 2, 2, 0.64);
+    }
+    a:hover {
+        background: #983038;
+    }
+}
+
+.formulario--link {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 0 2em 0;
+    a {
+        color: #000000;
+    }
+    a:hover {
+        color: #901720;
+    }
+    .link-r {
+        a {
+            color: #901720;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #3A080C;
+        }
+    }
 }
