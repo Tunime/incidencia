@@ -50,12 +50,20 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    span{
+        font-size: 0.5em;
+        margin: 0 0 0.8em 0;
+    }
 }
-
 .formulario--campos {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    div{
+        display:flex;
+        li{
+            margin: 0 1em;
+        }
+    }
     li {
         margin: 1.5em 0 0 0;
         div {
@@ -75,25 +83,25 @@ body {
         border: none;
     }
 }
+.center{
+    align-items: center;
+}
+center{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-.formulario--boton {
-    margin: 2em 0;
-    a {
-        padding: 0.5em 3em;
-        border-radius: 0.4em;
-        color: white;
-        background: #911720;
-        box-shadow: 0 3px 3px 0 rgba(3, 2, 2, 0.64);
-    }
-    a:hover {
-        background: #983038;
-    }
+
+.btn-log{
+    margin: 2em 0 0.4em 0;
 }
 
 .formulario--link {
     display: flex;
-    justify-content: space-around;
-    margin: 0 0 2em 0;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em 0 2em 0;
     a {
         color: #000000;
     }
@@ -109,4 +117,22 @@ body {
             color: #3A080C;
         }
     }
+}
+.formulario--boton {
+    a {
+        padding: 0.5em 3em;
+        border-radius: 0.4em;
+        color: white;
+        background: #911720;
+        box-shadow: 0 3px 3px 0 rgba(3, 2, 2, 0.64);
+    }
+    a:hover {
+        background: #983038;
+    }
+}
+.u--register{
+    width: 53em;
+}
+.btn-register{
+    margin: 0 1.5em;
 }
