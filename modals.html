@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Modals</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/modal.css" rel="stylesheet">
+        <script type="text/javascript" src="js/modal.js"></script>
+    </head>
+    <body>
+        <div>
+            <li>
+                <button onclick="modalvisto()" class="btn-agregar">+ cliente</button>
+            </li> 
+        </div>
+        <div>
+            <li>
+                <button onclick="modalvisto()" class="btn-agregar">ver</button>
+            </li> 
+        </div>
+        <!-- comienzo del primer modal -->
+        <div id="modal-datos">
+            <div class="modal--contenedor">
+                <ul class="modal--contenedor-contenido">
+                    <div class="modal--cerrar">
+                        <a href="#" onclick="modalcerrar()">X</a>
+                    </div>
+                    <ul class="modal--informacion">
+                        <div class="modal--avatar">
+                            <figure>
+                                <img src="img/icon-user.png" alt="avatra-del-usuario">
+                            </figure>
+                            <h2 id="name">Henry Cochicatari</h2>
+                        </div>
+                        <ul class="modal--datos">
+                            <li><div class="referencia">DNI</div><div class="u-dato">76471166</div></li>
+                            <li><div class="referencia">EMAIL</div><div class="u-dato">tunime.1@gmail.com</div></li>
+                            <li><div class="referencia">CELULAR</div><div class="u-dato">956 783 675</div></li>
+                            <li><div class="referencia">DIRECCION</div><div class="u-dato">Las americas W-11</div></li>
+                            <li><div class="referencia">ROL</div><div class="u-dato">Administrador</div></li>
+                            <li><div class="referencia">ESPECIALIDAD</div><div class="u-dato">Doctor</div></li>
+                        </ul>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+        <!-- fin del primer modal -->
+         <!-- comienzo del segundo modal -->
+        <div id="modal-datos">
+            <div class="modal--contenedor">
+                <ul class="modal--contenedor-contenido">
+                    <div class="modal--cerrar">
+                        <a href="#" onclick="modalcerrar()">X</a>
+                    </div>
+                    <ul class="modal--informacion">
+                        <div class="modal--avatar">
+                            <figure>
+                                <img src="img/icon-user.png" alt="avatra-del-usuario">
+                            </figure>
+                            <h2 id="name">Henry Cochicatari</h2>
+                        </div>
+                        <ul class="modal--datos">
+                            <li><div class="referencia">DNI</div><div class="u-dato">76471166</div></li>
+                            <li><div class="referencia">EMAIL</div><div class="u-dato">tunime.1@gmail.com</div></li>
+                            <li><div class="referencia">CELULAR</div><div class="u-dato">956 783 675</div></li>
+                            <li><div class="referencia">DIRECCION</div><div class="u-dato">Las americas W-11</div></li>
+                            <li><div class="referencia">ROL</div><div class="u-dato">Administrador</div></li>
+                            <li><div class="referencia">ESPECIALIDAD</div><div class="u-dato">Doctor</div></li>
+                        </ul>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+        <!-- fin del segundo modal -->
+    </body>
+</html>
